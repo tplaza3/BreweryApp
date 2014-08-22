@@ -1,0 +1,9 @@
+<h1><%= @beer.name%> Review</h1>
+
+	<p> Brewed by: <%= @beer.brewery.name%></p>
+	<p> Style: <%=@beer.style%></p>
+	<p> Rating (0-10): <%=@beer.rating%></p>
+	<p> Comments: <%=@beer.comments%></p>
+	
+
+<a href = "/beers/<%= @beer.id%>/edit"> Edit this beer!</a>

@@ -1,0 +1,9 @@
+development:
+  database: db/breweries.db
+  adapter: sqlite3
+
+test:
+  database: db/breweries_test.db
+  adapter: sqlite3
+
+# Indentation matters!

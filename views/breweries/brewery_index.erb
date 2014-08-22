@@ -1,0 +1,9 @@
+<p>
+<a href = "/breweries/new" > Add a brewery</a>
+</p>
+
+	<% @all_breweries.each do |b|%>
+	<p>
+	<a href= "/breweries/<%= b.id %>"><%=b.name%></a>
+	<%end%>
+	</p>

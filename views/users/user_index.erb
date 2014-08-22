@@ -1,0 +1,28 @@
+<h1>BreweryMate</h1>
+
+	<p>Hey Mate! BreweryMate allows you to track and review the breweries<br>
+		 and beers you have tried in Omaha, The Good Life!
+	</p>
+	
+	<p>If you have used BreweryMate before click your name or click another Mate.<br>
+		 First timer? Click the add new user link below or click another Mate!
+	</p>
+	
+  <form action="/users/<%=@user.id %>" method="post">
+	  <select name="user_id">
+	    <% @all_users.each do |u| %>
+	      <option value="<%= u.id %>"><%= u.name %></option>
+	    <% end %>
+	  </select>
+	  <input type="submit">
+  </form>
+			
+	<p>
+		<a href = "/users/new" > Add a new user</a>
+	</p>
+	
+  <p>Also, you can search for a list of breweries in another city!</p>
+  <form action="/city_brewery_list" method="post">
+   <input type= "text" placeholder= "City" name ="city">
+   <input type="Submit">
+  </form>

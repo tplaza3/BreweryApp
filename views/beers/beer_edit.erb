@@ -1,0 +1,19 @@
+<h1>Edit Beer Review</h1>
+
+<form action="/beers/<%= @beer.id %>/update" method="post">
+  <p>Beer name: <input type="text" name="name" value="<%= @beer.name %>"></p>
+	<p>Style: <input type="text" name="style" value="<%= @beer.style %>"></p>
+	<p>Rating (0-10): <input type="text" name="rating" value="<%= @beer.name %>"></p>
+	<p>Comments: <input type="text" name="comments" value="<%= @beer.comments %>"></p>
+  <select name="brewery_id">
+  
+    <% @all_breweries.each do |b| %>
+      <option value="<%= b.id %>"><%= b.name %></option>
+    <% end %>
+
+  </select>
+    
+  <input type="submit">
+</form>
+		
+

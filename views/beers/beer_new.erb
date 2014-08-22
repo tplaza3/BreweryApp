@@ -1,0 +1,20 @@
+<h>New Beer Review</h>
+
+	<form action= "/breweries/<%= @brewery.id%>/create_beer" method = "post">
+	  <p>Beer Name: <input type="text" name="name"></p>
+		<p>Style: <input type="text" name="style"></p>
+		<p>Rating (0-10): <input type="text" name="rating"></p>
+		<p>Comments: <input type="text" name="comments"></p>
+				
+	  <select name="brewery_id">
+    
+	    <% @all_breweries.each do |b| %>
+	      <option value="<%= b.id %>"><%= b.name %></option>
+	    <% end %>
+
+	  </select>
+  
+	  <input type="submit">
+	</form>
+
+	

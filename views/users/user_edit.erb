@@ -1,0 +1,15 @@
+<h> Edit <%= @user.name%>'s information breweries visited!</h>
+
+	<form action="/users/<%= @user.id %>/update" method="post">
+  
+  	<input type="text" name="name" value="<%= @user.name %>">
+	  <% @all_breweries.each do |b| %>
+	    <input type="checkbox" name="breweries[]" value="<%= b.id %>" <%= "checked" if @user.breweries.include?(b) %>>
+	    <%= b.name %><br>
+	  <% end %>
+		
+  	
+	  <input type="submit">
+	</form>
+		
+

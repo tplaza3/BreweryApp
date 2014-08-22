@@ -1,0 +1,9 @@
+<h> Edit <%= @brewery.name%>'s information, if you must.</h>
+
+	<form action = "/breweries/<%= @brewery.id%>/update" method = "post">
+		<p><input type = "text" name = "name" value = "<%= @brewery.name%>">
+       <input type = "submit">		
+		</p>
+	</form>
+		
+
