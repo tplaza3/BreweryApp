@@ -3,14 +3,6 @@ require "rubygems"
 require "bundler"
 Bundler.require
 
-require "pry"
-
-require "sinatra"
-require "sinatra/reloader"
-require "sinatra/activerecord"
-
-require "sqlite3"
-require "brewery_db"
 #require "geocoder"
 
 require_relative "./models/user.rb"
