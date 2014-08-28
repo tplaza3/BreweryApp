@@ -1,0 +1,21 @@
+<h1>These are the breweries in lovely <%= @city%>!</h1>
+
+<body>
+  <% @locations.each do |l| %>
+	  <p>
+			 <%if l.is_closed == "N" %>
+	    	<%= "Name: #{l.brewery.name}"%><br>
+			 	<%= "Address: #{l.street_address} "%><br>
+			 	<%  "#{l.latitude}, #{l.longitude} "%>
+			 	<%= "Description: #{l.brewery.description}"%><br>
+			 	<%= "Phone: #{l.phone}"%><br>
+			 	<a href = "/<% l.website %>"><%="#{l.website}"%></a><br>
+			 <%else%>		 
+			 <%end%>
+	  </p>
+  <% end%>
+
+
+<p>
+<a href ="/users">Home Sweet Home</a>
+</p>

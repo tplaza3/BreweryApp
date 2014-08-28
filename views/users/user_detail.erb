@@ -3,9 +3,12 @@
 
 <p>
 <% @user.breweries.each do |b| %>
-  <%= b.name %><br>
-	<a href = "/breweries/<%= b.id%>/beers"> Check out <%=@user.name%>'s other beer reviews</a>
+  <%= b.name %>
+	<p>
+		<a href = "/breweries/<%= b.id%>/beers"> Check out other beer reviews for <%= b.name %>!</a>
+	</p>
 <% end %>
 <p>
+	
 
-<a href = "/users/<%= @user.id%>/edit"> Edit this user!</a>
+<a href = "/users/<%= @user.id %>/edit"> Edit <%= @user.name %>'s breweries visited!</a>

@@ -1,8 +1,10 @@
-<h> Edit <%= @user.name%>'s information breweries visited!</h>
+<h> Edit <%= @user.name%>'s breweries visited!</h>
 
+<p>	
 	<form action="/users/<%= @user.id %>/update" method="post">
-  
-  	<input type="text" name="name" value="<%= @user.name %>">
+  <p>
+  	Edit MateName: <input type="text" name="name" value="<%= @user.name %>">
+	</p>
 	  <% @all_breweries.each do |b| %>
 	    <input type="checkbox" name="breweries[]" value="<%= b.id %>" <%= "checked" if @user.breweries.include?(b) %>>
 	    <%= b.name %><br>
@@ -11,5 +13,6 @@
   	
 	  <input type="submit">
 	</form>
+</p>
 		
 

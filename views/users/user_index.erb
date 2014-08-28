@@ -8,7 +8,7 @@
 		 First timer? Click the add new user link below or click another Mate!
 	</p>
 	
-  <form action="/users/<%=@user.id %>" method="post">
+  <form action="/users/detail" method="post">
 	  <select name="user_id">
 	    <% @all_users.each do |u| %>
 	      <option value="<%= u.id %>"><%= u.name %></option>
@@ -20,6 +20,11 @@
 	<p>
 		<a href = "/users/new" > Add a new user</a>
 	</p>
+	
+	<p>
+		<a href = "/breweries" > Check out Omaha beer reviews from other Mates!</a>
+	</p>
+		
 	
   <p>Also, you can search for a list of breweries in another city!</p>
   <form action="/city_brewery_list" method="post">

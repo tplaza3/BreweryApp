@@ -1,6 +1,8 @@
 <p>
-<a href = "/breweries/<%=@brewery.id%>/new_beer" > Add a new beer</a>
+<a href = "/breweries/<%=@brewery.id%>/new_beer" > Add a new beer review for <%= @brewery.name %></a>
 </p>
+
+<p> Current beer reviews! </p>
 
 	<% @all_beers.each do |b|%>
 	<p>

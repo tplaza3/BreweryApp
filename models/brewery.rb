@@ -2,6 +2,8 @@ class Brewery < ActiveRecord::Base
   has_many :beers
   has_and_belongs_to_many :users
   
+  validates_uniqueness_of :name
+  
   # reverse_geocoded_by :latitude, :longitude
  #  after_validation :reverse_geocode  # auto-fetch address
  #
