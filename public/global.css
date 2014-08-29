@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+#main{
+	text-align: center;
+  background: url("./images/clouds2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	padding: 0 0 375px 0;
+	margin: auto auto;
+}
+
+#container{
+  
+  width: 1100px;
+  margin: 0 auto 0 auto; 
+	padding: 0 0 0 0;
+	text-align: center;
+}
+
+#links{
+  float: right;
+}
+
+header{	
+	
+}
+
+header li{
+  display: inline-block;
+{
+
+h1{
+
+	font-family: 'Gentona-Book';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #040441;
+	letter-spacing: 2px;
+	font-size: 48px;
+	text-align: center;
+}
+
+p{
+	font-family: 'Gentona-Book';
+	font-weight: normal;
+	font-style: normal;
+	
+	color: #111261;
+	letter-spacing: 2px;
+	font-size: 16px;
+	
+}
