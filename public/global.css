@@ -6,14 +6,40 @@ html {
 }
 
 
+#main_outer{
+  background: url("./images/darkwater.jpg");
+	background-size: 110%;
+	
 
-#main{
-	text-align: center;
-  background: url("./images/clouds2.jpg");
+	margin: 0 0 0 0;
+	
+}
+
+#main_inner{
+	
+  background: url("./images/water.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;	
-	padding: 0 0 375px 0;
-	margin: auto auto;
+	padding: 25px 0 375px 0;
+	margin: 0 75px 0 75px;
+}
+
+
+header{
+  background: url("./images/blue.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	padding: 10px 10px 10px 0;
+  
+}
+
+header li{
+	padding: 30px 0 0 0;
+  display: inline-block;
+	font-family: 'Georgia'
+	
+	
+	
 }
 
 #container{
@@ -28,16 +54,13 @@ html {
   float: right;
 }
 
-header{	
-	
+.logo{
+	text-align: left;
+	padding: 0 0 0 0;
 }
 
-header li{
-  display: inline-block;
-{
 
 h1{
-
 	font-family: 'Gentona-Book';
 	font-weight: normal;
 	font-style: normal;
@@ -57,4 +80,8 @@ p{
 	letter-spacing: 2px;
 	font-size: 16px;
 	
+}
+
+body{
+	margin: 0 0 0 0;
 }
