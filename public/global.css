@@ -9,17 +9,17 @@ html {
 #main_outer{
   background: url("./images/darkwater.jpg");
 	background-size: 110%;
-	
+
 
 	margin: 0 0 0 0;
-	
+
 }
 
 #main_inner{
-	
+
   background: url("./images/water.jpg");
 	background-size: 100%;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	padding: 25px 0 375px 0;
 	margin: 0 75px 0 75px;
 }
@@ -84,4 +84,8 @@ p{
 
 body{
 	margin: 0 0 0 0;
+}
+
+.error{
+  color: red;
 }

@@ -1,9 +1,9 @@
 <h>New Beer Review</h>
 
-	<form action= "/breweries/<%= @brewery.id%>/create_beer" method = "post">
-	  <p>Beer Name: <input type="text" name="name"></p>
-		<p>Style: <input type="text" name="style"></p>
-		<p>Rating (0-10): <input type="text" name="rating"></p>
+	<form action= "/breweries/<%= @brewery.id%>/create_beer" id= "beer_form" method = "post">
+	  <p>Beer Name: <input type="text" name="name" id="beer_name"></p><span class="error">Please Give the Beer a Name.</span>
+		<p>Style: <input type="text" name="style" id="style"></p><span class="error">Please Give the Beer a Style.</span>
+		<p>Rating (0-10): <input type="text" name="rating" id="rating"></p><span class="error">Please Give the Beer a Rating.</span>
 		<p>Comments: <input type="text" name="comments"></p>
 				
 	  <select name="brewery_id">
